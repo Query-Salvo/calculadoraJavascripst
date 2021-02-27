@@ -1,0 +1,13 @@
+#ari {
+    float: top;
+    position:absolute
+}
+#btn-equal {
+    width: 135px ;
+    height: 35px ;
+    margin-top: 3px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: top
+    ;
+}

@@ -5,22 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <style> 
-        ul {
-            display: inline-block;
-
-        }
-        li {
-            
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
 
-    <div class=>
+    <div >
         <ul class = "list-group d-inline-block" >
-            <li class="list-group-item list-group-item-action" onclick = "calcular()">7</li>
+            <li onclick = "calcular()" id="sete" class="list-group-item list-group-item-action" >7</li>
             <li class="list-group-item list-group-item-action" >4</li>
             <li class="list-group-item list-group-item-action">1</li>
         </ul>
@@ -35,11 +27,27 @@
             <li class="list-group-item list-group-item-action" >6</li>
             <li class="list-group-item list-group-item-action">3</li>
         </ul>
+        <ul id="ari" class = "list-group d-inline-block">
+            <li class="list-group-item list-group-item-action">+</li>
+            <li class="list-group-item list-group-item-action" >-</li>
+            <li class="list-group-item list-group-item-action">x</li>
+            <li class="list-group-item list-group-item-action">÷</li>
+        </ul>
+        <button type= button type="button" class="d-block btn btn-primary" id = "btn-equal">
+            =
+        </button>
+    </div>
+    <div id="diva">
+        filho da putaaa
     </div>
 
 
     <script>
-
+        function calcular () {
+            let sete = document.getElementById ("sete")
+            let div = document.getElementById ("diva")
+            div.innerHTML = "voce esta calvo"
+        }
     </script>
 
 </body>
