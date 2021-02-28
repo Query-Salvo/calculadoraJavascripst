@@ -12,42 +12,66 @@
 
     <div >
         <ul class = "list-group d-inline-block" >
-            <li onclick = "calcular()" id="sete" class="list-group-item list-group-item-action" >7</li>
-            <li class="list-group-item list-group-item-action" >4</li>
-            <li class="list-group-item list-group-item-action">1</li>
+            <li onclick = "valor(7)" id="sete" class="list-group-item list-group-item-action" >7</li>
+            <li onclick = "valor(4)" id="quatro" class="list-group-item list-group-item-action" >4</li>
+            <li onclick = "valor(1)" id="um" class="list-group-item list-group-item-action">1</li>
         </ul>
         <ul class = "list-group d-inline-block">
-            <li class="list-group-item list-group-item-action">8</li>
-            <li class="list-group-item list-group-item-action" >5</li>
-            <li class="list-group-item list-group-item-action">2
+            <li onclick = "valor(8)" id="oito" class="list-group-item list-group-item-action">8</li>
+            <li onclick = "valor(5)" id="cinco" class="list-group-item list-group-item-action" >5</li>
+            <li onclick = "valor(2)" id="dois" class="list-group-item list-group-item-action">2
             </li>
         </ul>
         <ul class = "list-group d-inline-block">
-            <li class="list-group-item list-group-item-action">9</li>
-            <li class="list-group-item list-group-item-action" >6</li>
-            <li class="list-group-item list-group-item-action">3</li>
+            <li onclick = "valor(9)" id="nove" class="list-group-item list-group-item-action">9</li>
+            <li onclick = "valor(6)" id="seis" class="list-group-item list-group-item-action" >6</li>
+            <li onclick = "valor(3)" id="tres" class="list-group-item list-group-item-action">3</li>
         </ul>
         <ul id="ari" class = "list-group d-inline-block">
-            <li class="list-group-item list-group-item-action">+</li>
-            <li class="list-group-item list-group-item-action" >-</li>
-            <li class="list-group-item list-group-item-action">x</li>
-            <li class="list-group-item list-group-item-action">÷</li>
+            <li onclick = "soma()" id="sete" class="list-group-item list-group-item-action">+</li>
+            <li onclick = "sub()" id="sete" class="list-group-item list-group-item-action" >-</li>
+            <li onclick = "multi()" id="sete" class="list-group-item list-group-item-action">x</li>
+            <li onclick = "divi()" id="sete" class="list-group-item list-group-item-action">÷</li>
         </ul>
         <button type= button type="button" class="d-block btn btn-primary" id = "btn-equal">
             =
         </button>
     </div>
     <div id="diva">
-        filho da putaaa
+        
+    </div>
+    <div id= "diva3"> 
+
+    </div>
+    <div id="diva2">
+
     </div>
 
 
     <script>
-        function calcular () {
-            let sete = document.getElementById ("sete")
-            let div = document.getElementById ("diva")
-            div.innerHTML = "voce esta calvo"
+        let _1 = Number(document.getElementById("um").innerText) 
+        let _2 = Number(document.getElementById("dois").innerText)
+        let _3 = Number(document.getElementById("tres").innerText)
+        let _4 = Number(document.getElementById("quatro").innerText)
+        let _5 = Number(document.getElementById("cinco").innerText)
+        let _6 = Number(document.getElementById("seis").innerText)
+        let _7 = Number(document.getElementById("sete").innerText)
+        let _8 = Number(document.getElementById("oito").innerText)
+        let _9 = Number(document.getElementById("nove").innerText)
+        let div = document.getElementById("diva")
+        let div3 = document.getElementById("diva3")
+        let teste = 0
+        let div2 = document.getElementById ("diva2")
+
+        function valor (clicked_id) {
+            let numero = document.getElementById('diva').innerHTML
+            document.getElementById('diva').innerHTML = numero+(clicked_id)
         }
+
+        
+
+
+
     </script>
 
 </body>
